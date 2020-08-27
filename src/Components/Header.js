@@ -1,8 +1,9 @@
 import React from 'react'
+import './theme.css'
 import { Container, Row, Col, Navbar, Nav } from 'react-bootstrap'
 const Header = () => {
     return (
-        <div>
+        <div className="bg-s">
             <Container>
                 <Row>
                     <Col>

@@ -6,7 +6,7 @@ import useWebAnimations, { flipInX } from "@wellyshen/use-web-animations";
 import Typewriter from 'typewriter-effect';
 
 const Home = () => {
-    const { ref, playState } = useWebAnimations({ ...flipInX });
+    const { ref } = useWebAnimations({ ...flipInX });
     return (
         <div className="bg-s h-p">
             <Container>

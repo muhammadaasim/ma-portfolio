@@ -4,9 +4,10 @@
 }
 /* Home Component Background */
 .h-text{
+    vertical-align: middle;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
-    padding-top:5%;
+    padding-top:10%;
 }
 /* .home{
 margin: 50px 0px 50px 0px;

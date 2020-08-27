@@ -1,8 +1,18 @@
+/* Silver Background */
 .bg-s{
     background-color: #F6F7FB;
 }
+/* Home Component Background */
 .h-text{
-    padding: 61% 0 61% 0;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
+    padding-top:5%;
+}
+/* .home{
+margin: 50px 0px 50px 0px;
+} */
+/* Padding for Home */
+.h-p{
+        
+        padding: 5% 0 5% 0;
 }

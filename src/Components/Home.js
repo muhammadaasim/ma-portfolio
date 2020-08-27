@@ -1,13 +1,14 @@
 import React from 'react'
 import './theme.css'
+import mwl from './mwl.svg'
 import { Container, Col, Row } from 'react-bootstrap'
 const Home = () => {
     return (
-        <div className="bg-s">
+        <div className="bg-s h-p">
             <Container>
                 <Row>
-                    <Col>
-                        <div className="h-text text-left">
+                    <Col className="h-text " xs={12} lg={8} md={8}  >
+                        <div >
                             <h3>
                                 Muhammad Aasim
                         </h3>
@@ -22,7 +23,9 @@ const Home = () => {
                         </p>
                         </div>
                     </Col>
+
                     <Col>
+                        <img src={mwl} alt="Man With Laptop"/>
                     </Col>
                 </Row>
             </Container>

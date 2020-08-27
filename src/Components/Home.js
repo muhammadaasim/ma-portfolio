@@ -7,7 +7,7 @@ const Home = () => {
         <div className="bg-s h-p">
             <Container>
                 <Row>
-                    <Col className="h-text " xs={12} lg={8} md={8}  >
+                    <Col className="h-text " xs={12} lg={6} md={7}  >
                         <div >
                             <h3>
                                 Muhammad Aasim
@@ -24,7 +24,7 @@ const Home = () => {
                         </div>
                     </Col>
 
-                    <Col>
+                    <Col xs={12} lg={6} md={5}>
                         <img src={mwl} alt="Man With Laptop"/>
                     </Col>
                 </Row>

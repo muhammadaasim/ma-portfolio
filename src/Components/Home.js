@@ -7,11 +7,11 @@ const Home = () => {
             <Container>
                 <Row>
                     <Col>
-                        <div className="h-text">
+                        <div className="h-text text-left">
                             <h3>
                                 Muhammad Aasim
                         </h3>
-                            <p>
+                            <p className="text-left">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.

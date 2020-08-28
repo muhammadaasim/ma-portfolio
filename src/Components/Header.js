@@ -7,15 +7,15 @@ const Header = () => {
             <Container>
                 <Row>
                     <Col>
-                        <Navbar collapseOnSelect expand="lg" >
+                        <Navbar collapseOnSelect expand="lg" fixed="top" bg="light">
                             <Navbar.Brand href="#home">MA</Navbar.Brand>
                             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                             <Navbar.Collapse id="responsive-navbar-nav">
                                 <Nav className="mr-auto">
                                 </Nav>
                                 <Nav className="mr-5">
-                                    <Nav.Link href="#Home" >Home</Nav.Link>
-                                    <Nav.Link href="#Services">Services</Nav.Link>
+                                    <Nav.Link href="#home" >Home</Nav.Link>
+                                    <Nav.Link href="#services">Services</Nav.Link>
                                     <Nav.Link href="#Portfolio">Portfolio</Nav.Link>
                                     <Nav.Link href="#Contact">Contact</Nav.Link>
                                 </Nav>

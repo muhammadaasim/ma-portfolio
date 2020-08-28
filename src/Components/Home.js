@@ -2,18 +2,20 @@ import React from 'react'
 import './theme.css'
 import mwl from './mwl.svg'
 import { Container, Col, Row } from 'react-bootstrap'
-import useWebAnimations, { flipInX } from "@wellyshen/use-web-animations";
+import useWebAnimations, { flipInX, fadeIn } from "@wellyshen/use-web-animations";
 import Typewriter from 'typewriter-effect';
 
 const Home = () => {
-    const { ref } = useWebAnimations({ ...flipInX });
+    const { ref: flipx } = useWebAnimations({ ...flipInX });
+    const { ref: fadeinn } = useWebAnimations({ ...fadeIn });
+
     return (
         <div className="bg-s h-p">
-            <Container>
+            <Container id="home">
                 <Row>
                     <Col className="h-text " xs={12} lg={6} md={7}  >
-                        <div ref={ref}>
-                            <h3>
+                        <div >
+                            <h3 ref={flipx}>
                                 Muhammad Aasim
                             </h3>
                             <p className="text-left">
@@ -42,11 +44,11 @@ const Home = () => {
                     </Col>
 
                     <Col xs={12} lg={6} md={5}>
-                        <img src={mwl} alt="Man With Laptop" />
+                        <img src={mwl} alt="Man With Laptop" ref={fadeinn} />
                     </Col>
                 </Row>
             </Container>
-        </div>
+        </div >
     )
 }
 

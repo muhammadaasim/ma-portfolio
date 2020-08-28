@@ -14,10 +14,10 @@ const Header = () => {
                                 <Nav className="mr-auto">
                                 </Nav>
                                 <Nav className="mr-5">
-                                    <Nav.Link href="#home" >Home</Nav.Link>
+                                    <Nav.Link href="#home">Home</Nav.Link>
                                     <Nav.Link href="#services">Services</Nav.Link>
-                                    <Nav.Link href="#Portfolio">Portfolio</Nav.Link>
-                                    <Nav.Link href="#Contact">Contact</Nav.Link>
+                                    <Nav.Link href="#portfolio">Portfolio</Nav.Link>
+                                    <Nav.Link href="#contact">Contact</Nav.Link>
                                 </Nav>
                             </Navbar.Collapse>
                         </Navbar>

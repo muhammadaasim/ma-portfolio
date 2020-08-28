@@ -1,28 +1,34 @@
 import React from 'react'
-import { Container, Row, Col, Tabs, Tab } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
+import 'antd/dist/antd.css';
+import { Tabs } from 'antd';
+
+const { TabPane } = Tabs;
 const portfolio = () => {
+    function callback(key) {
+        console.log(key);
+    }
     return (
-        <div className="bg-s">
+        <div>
             <Container id="portfolio">
                 <Row>
                     <Col>
-                        <h3 className="text-center pt-5 pb-5">Portfolio</h3>
+                        <h3 className="text-center pt-5 pb-2">Portfolio</h3>
                     </Col>
                 </Row>
                 <Row>
                     <Col sm={12} xs={12} md={12} lg={12}>
-                        <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
-                            <Tab eventKey="all" title="All">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                            </Tab>
-                            <Tab eventKey="WebDesign" title="Web Design">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                            </Tab>
-                            <Tab eventKey="Graphics" title="Graphics">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                            </Tab>
+                        <Tabs onChange={callback} type="card" centered>
+                            <TabPane tab="Web Design" key="1">
+                                Web Design Projects
+                            </TabPane>
+                            <TabPane tab="Graphic Design" key="2">
+                                Graphic Design Projects.
+                            </TabPane>
+
                         </Tabs>
                     </Col>
+
                 </Row>
             </Container>
         </div>

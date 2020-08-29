@@ -13,7 +13,7 @@ const Home = () => {
         <div className="bg-s h-p">
             <Container id="home">
                 <Row>
-                    <Col className="h-text " xs={12} lg={6} md={7}  >
+                    <Col className="h-text " xs={12} sm={12} lg={6} md={7} xl={6}  >
                         <div >
                             <h3 ref={flipx}>
                                 Muhammad Aasim
@@ -43,7 +43,7 @@ const Home = () => {
                         </div>
                     </Col>
 
-                    <Col xs={12} lg={6} md={5}>
+                    <Col xs={12} sm={12} lg={6} md={5} xl={6}>
                         <img src={mwl} alt="Man With Laptop" ref={fadeinn} />
                     </Col>
                 </Row>

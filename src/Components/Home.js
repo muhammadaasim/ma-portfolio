@@ -10,7 +10,7 @@ const Home = () => {
     const { ref: fadeinn } = useWebAnimations({ ...fadeIn });
 
     return (
-        <div className="bg-s h-p">
+        <div className="bg-s h-p bg-pattern">
             <Container id="home">
                 <Row>
                     <Col className="h-text " xs={12} sm={12} lg={6} md={7} xl={6}  >

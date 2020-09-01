@@ -26,7 +26,7 @@ const Contact = () => {
                     </Col>
                     <Col xs={12} sm={12} md={6} lg={6} xl={6}>
                         <FormControl>
-                            <span className="mb-2">
+                            <span style={{}}>
                                 <AccountCircle className="mt-4 mr-2" />
                                 <TextField id="input-with-icon-grid" label="First Name" />
                                 <span>

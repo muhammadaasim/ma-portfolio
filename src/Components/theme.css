@@ -1,6 +1,6 @@
 /* Silver Background */
 .bg-s{
-    background-color: #F6F7FB;
+    background-color:#F8F9FA;
 }
 /* Home Component Background */
 .h-text{
@@ -15,5 +15,10 @@ margin: 50px 0px 50px 0px;
 /* Padding for Home */
 .h-p{
         
-        padding: 8% 0 8% 0;
+        padding: 7.4% 0 7.4% 0;
+}
+.bg-pattern{
+background-image: url(./imgs/bg.svg);
+background-repeat: no-repeat;
+background-size: cover;
 }

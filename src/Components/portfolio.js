@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import 'antd/dist/antd.css';
 import { Tabs } from 'antd';
-
+import ScrollAnimation from 'react-animate-on-scroll';
 const { TabPane } = Tabs;
 const portfolio = () => {
     function callback(key) {
@@ -13,7 +13,9 @@ const portfolio = () => {
             <Container id="portfolio">
                 <Row>
                     <Col>
+                    <ScrollAnimation animateIn="fadeInUp">
                         <h3 className="text-center pt-5 pb-2">Portfolio</h3>
+                    </ScrollAnimation>
                     </Col>
                 </Row>
                 <Row>

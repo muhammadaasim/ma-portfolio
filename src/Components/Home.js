@@ -2,12 +2,11 @@ import React from 'react'
 import './theme.css'
 import mwl from './mwl.svg'
 import { Container, Col, Row } from 'react-bootstrap'
-import useWebAnimations, { flipInX } from "@wellyshen/use-web-animations";
+import useWebAnimations from "@wellyshen/use-web-animations";
 import Typewriter from 'typewriter-effect';
-
+import ScrollAnimation from 'react-animate-on-scroll';
 const Home = () => {
-    const { ref: flipx } = useWebAnimations({ ...flipInX });
-    const { ref: illustration} = useWebAnimations({
+    const { ref: illustration,getAnimation} = useWebAnimations({
           keyframes: [
             { transform: "translate(0,0)" },
             { transform: "translate(0,30px)" },
@@ -27,8 +26,10 @@ const Home = () => {
                 <Row>
                     <Col className="h-text " xs={12} sm={12} lg={6} md={7} xl={6}  >
                         <div >
-                            <h3 ref={flipx}>
+                            <h3>
+                            <ScrollAnimation animateIn='bounceInLeft'>
                                 Muhammad Aasim
+                            </ScrollAnimation>
                             </h3>
                             <p className="text-left">
 
@@ -38,10 +39,11 @@ const Home = () => {
                                         loop: true,
                                     }}
                                     onInit={(typewriter) => {
-                                        typewriter.typeString('Hello there! I am Web Developer who knows HTML,CSS,JS,Bootstrap, React.js')
+                                        typewriter.typeString('Hello there!, I am Web Developer who knows HTML,CSS,JS,Bootstrap, React.js')
                                             .callFunction(() => {
                                                 console.log('String typed out!');
                                             })
+    
                                             .pauseFor(2500)
                                             .deleteAll()
                                             .callFunction(() => {
@@ -56,11 +58,11 @@ const Home = () => {
                     </Col>
 
                     <Col xs={12} sm={12} lg={6} md={5} xl={6}>
-                        <img src={mwl} alt="Man With Laptop" ref={illustration} />
+                        <img src={mwl} alt="Man With Laptop" ref={illustration} onMouseEnter={()=>getAnimation().pause()} onMouseLeave={()=>getAnimation().play()}/>
                     </Col>
                 </Row>
             </Container>
-        </div >
+        </div>
     )
 }
 

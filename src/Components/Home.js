@@ -2,10 +2,10 @@ import React from 'react'
 import './theme.css'
 import mwl from './mwl.svg'
 import { Container, Col, Row } from 'react-bootstrap'
-import useWebAnimations from "@wellyshen/use-web-animations";
+import useWebAnimations,{fadeIn} from "@wellyshen/use-web-animations";
 import Typewriter from 'typewriter-effect';
-import ScrollAnimation from 'react-animate-on-scroll';
 const Home = () => {
+    const {ref:namee}=useWebAnimations({...fadeIn});
     const { ref: illustration,getAnimation} = useWebAnimations({
           keyframes: [
             { transform: "translate(0,0)" },
@@ -25,12 +25,8 @@ const Home = () => {
             <Container>
                 <Row>
                     <Col className="h-text " xs={12} sm={12} lg={6} md={7} xl={6}  >
-                        <div >
-                            <h3>
-                            <ScrollAnimation animateIn='bounceInLeft'>
-                                Muhammad Aasim
-                            </ScrollAnimation>
-                            </h3>
+                        <div>
+                            <h3 ref={namee}> Muhammad Aasim </h3>
                             <p className="text-left">
 
                                 <Typewriter
@@ -58,7 +54,7 @@ const Home = () => {
                     </Col>
 
                     <Col xs={12} sm={12} lg={6} md={5} xl={6}>
-                        <img src={mwl} alt="Man With Laptop" ref={illustration} onMouseEnter={()=>getAnimation().pause()} onMouseLeave={()=>getAnimation().play()}/>
+                        <img src={mwl} alt="Man With Laptop" className="home-illustration" ref={illustration} onMouseEnter={()=>getAnimation().pause()} onMouseLeave={()=>getAnimation().play()}/>
                     </Col>
                 </Row>
             </Container>

@@ -17,7 +17,6 @@ margin: 50px 0px 50px 0px;
 } */
 /* Padding for Home */
 .h-p{
-        
         padding: 7.4% 0 7.4% 0;
 }
 .bg-pattern{
@@ -68,6 +67,9 @@ width:48%;
     text-align:center;
         padding-top:0px;
 }
+.h-p{
+        padding: 13.4% 0 7.4% 0;
+}
 
 }
  
@@ -86,6 +88,11 @@ width:48%;
     text-align:center;
     padding-bottom:90px;
 }
+.home-illustration{
+    width:84%;
+    height:auto;
+    margin:0 8% 0 8%;
+}
 }
  
 /* Large devices (desktops, 992px and up) */
@@ -95,6 +102,10 @@ width:48%;
 text-align:center;
 padding-top:20px;
 padding-bottom:50px;
+}
+#home{
+padding-bottom:50px;
+padding-top:50px;
 }
 }
  

@@ -21,8 +21,8 @@ const Home = () => {
           },});
 
     return (
-        <div className="bg-s h-p bg-pattern">
-            <Container id="home">
+        <div className="bg-s h-p bg-pattern" id="home">
+            <Container>
                 <Row>
                     <Col className="h-text " xs={12} sm={12} lg={6} md={7} xl={6}  >
                         <div >

@@ -6,11 +6,11 @@ import ScrollAnimation from 'react-animate-on-scroll';
 const Services = () => {
 
     return (
-        <div>
-            <Container id="services">
+        <div id="services">
+            <Container>
                 <Row>
                     <Col xs={12} sm={12} md={12} lg={12} xl={12}>
-                        <h3 className="text-center pt-5 pb-5" >
+                        <h3 className="text-center pt-5 mt-4 pb-2" >
                             <ScrollAnimation animateIn="fadeInUp">
                                 My Services
                             </ScrollAnimation>

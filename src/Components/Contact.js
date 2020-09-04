@@ -21,12 +21,12 @@ const Contact = () => {
             easing: "ease-in-out", // Use a fancy timing function
           },});
     return (
-        <div>
-            <Container id="contact">
+        <div id="contact">
+            <Container>
                 <Row>
                     <Col>
                         <ScrollAnimation animateIn="fadeInUp">
-                            <h3 className="text-center pt-5 pb-5">Contact Me</h3>
+                            <h3 className="text-center ppt-5 mt-4 pb-3">Contact Me</h3>
                         </ScrollAnimation>
                     </Col>
                 </Row>

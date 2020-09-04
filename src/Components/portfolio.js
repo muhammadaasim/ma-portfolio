@@ -10,12 +10,12 @@ const portfolio = () => {
         console.log(key);
     }
     return (
-        <div>
-            <Container id="portfolio">
+        <div id="portfolio">
+            <Container>
                 <Row>
                     <Col>
                     <ScrollAnimation animateIn="fadeInUp">
-                        <h3 className="text-center pt-5 pb-2">Portfolio</h3>
+                        <h3 className="text-center pt-5 mt-4 pb-3">Portfolio</h3>
                     </ScrollAnimation>
                     </Col>
                 </Row>

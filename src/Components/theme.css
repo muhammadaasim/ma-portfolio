@@ -1,7 +1,7 @@
 /* Silver Background */
-html {
+    html {
     scroll-behavior: smooth;
-  }
+      }
 .bg-s{
     background-color:#F8F9FA;
 }
@@ -23,7 +23,7 @@ margin: 50px 0px 50px 0px;
 .bg-pattern{
 background-image: url(./imgs/bg.svg);
 background-repeat: no-repeat;
-background-size: cover;
+background-size:cover;
 }
 .card-img{
 height:auto;
@@ -31,9 +31,10 @@ width:80%;
 }
 .card-body{
     transition: transform .3s;
+    text-align:center;
 }
 .card-body:hover{
-    background-color:blue;
+    background-color:rgba(0,0,255,0.75);
     border-radius: 4%;
     color:white;
     transform:scale(1.02);
@@ -43,8 +44,16 @@ width:80%;
     font-size: 2.6vh;
 
 }
-
-
+.txtname{
+width:48%;
+}
+.txtbox{
+    width:98%;
+}
+.contactform
+{
+    margin-left:20px;
+}
 @media (max-width: 574px) {  
     .bg-pattern{
         background-image:none;
@@ -54,6 +63,10 @@ width:80%;
         width:60% ;
         height:auto;
         }
+        .contactform
+{
+    text-align:center;
+}
 
 }
  
@@ -67,6 +80,10 @@ width:80%;
             height:auto;
             width:65%;
             }
+             .contactform
+{
+    text-align:center;
+}
 }
  
 /* Large devices (desktops, 992px and up) */

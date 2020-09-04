@@ -66,6 +66,7 @@ width:48%;
         .contactform
 {
     text-align:center;
+        padding-top:0px;
 }
 
 }
@@ -78,22 +79,38 @@ width:48%;
         }
         .card-img{
             height:auto;
-            width:65%;
+            width:35%;
             }
              .contactform
 {
     text-align:center;
+    padding-bottom:90px;
 }
 }
  
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) { 
- 
+  .contactform
+ {
+text-align:center;
+padding-top:20px;
+padding-bottom:50px;
+}
 }
  
 /* Extra large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {  
-    
+     .contactform
+    {
+    text-align:center;
+     padding-top:50px !important;
+}
 }
  
- 
+ @media (min-width: 1200px) {  
+     .contactform
+    {
+    text-align:center;
+     padding-top:80px !important;
+}
+}

@@ -2,8 +2,24 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { FormControl, TextField, Button } from '@material-ui/core';
 import ScrollAnimation from 'react-animate-on-scroll';
+import CU from './imgs/contactus.svg'
+import useWebAnimations from "@wellyshen/use-web-animations";
+
 import './theme.css'
 const Contact = () => {
+        const { ref: illustration,getAnimation} = useWebAnimations({
+          keyframes: [
+            { transform: "translate(0,0)" },
+            { transform: "translate(0,30px)" },
+            { transform: "translate(0,0)" },
+          ],
+          timing: {
+            delay: 400, // Start with a 500ms delay
+            duration: 3000, // Run for 1000ms
+            iterations: Infinity, // Repeat once
+            direction: "alternate", // Run the animation forwards and then backwards
+            easing: "ease-in-out", // Use a fancy timing function
+          },});
     return (
         <div>
             <Container id="contact">
@@ -16,8 +32,8 @@ const Contact = () => {
                 </Row>
                 <Row>
 
-                    <Col xs={12} sm={12} md={7} lg={7} xl={7}>
-
+                    <Col xs={12} sm={12} md={7} lg={7} xl={7} className="pb-5">
+                    <img src={CU} alt="Contact US" ref={illustration} onMouseEnter={()=>getAnimation().pause()} onMouseLeave={()=>getAnimation().play()}/>
                     </Col>
                     <Col xs={12} sm={12} md={5} lg={5} xl={5}>
                           <div className="contactform">

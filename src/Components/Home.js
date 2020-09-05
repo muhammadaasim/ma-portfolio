@@ -28,7 +28,7 @@ const Home = () => {
                         <div>
                             <h3 ref={namee}> Muhammad Aasim </h3>
                             <p className="text-left">
-
+                                <div className="typewriter">
                                 <Typewriter
                                     options={{
                                         autoStart: true,
@@ -48,7 +48,7 @@ const Home = () => {
                                             .start();
                                     }}
                                 />
-
+                                </div>
                             </p>
                         </div>
                     </Col>

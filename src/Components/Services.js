@@ -4,7 +4,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const Services = () => {
-
     return (
         <div id="services">
             <Container>
@@ -14,7 +13,6 @@ const Services = () => {
                             <ScrollAnimation animateIn="fadeInUp">
                                 My Services
                             </ScrollAnimation>
-
                         </h3>
                     </Col>
                 </Row>

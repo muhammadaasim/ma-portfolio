@@ -5,6 +5,9 @@
 .bg-s{
     background-color:#F8F9FA;
 }
+.typewriter{
+height:60px;
+}
 /* Home Component Background */
 .h-text{
     vertical-align: middle;
